@@ -6,12 +6,29 @@ This helps me build consistency, sharpen my coding skills, and understand key da
 
 ---
 
-## 📁 Project Structure
+## 📁 Practice Structure
 
 Each folder is named after a **data structure** or **algorithmic topic** and contains:
 
 - ✅ Daily problems (1 per file)
 - 🧪 Corresponding test files to validate the solutions
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (vXX or higher)
+- npm (vXX or higher)
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+```
 
 ---
 
