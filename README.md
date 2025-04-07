@@ -17,7 +17,7 @@ Each folder is named after a **data structure** or **algorithmic topic** and con
 
 # Two Adds (20 mins)
 
-### Problem:
+### 1. Problem: Closures
 
 Write a function that adds from two invocations.
 
