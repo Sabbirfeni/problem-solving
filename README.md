@@ -25,8 +25,8 @@ Each folder is named after a **data structure** or **algorithmic topic** and con
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone [https://github.com/your-username/your-repo.git](https://github.com/Sabbirfeni/problem-solving.git)
+cd problem-solving
 npm install
 ```
 
