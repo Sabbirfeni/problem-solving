@@ -15,16 +15,18 @@ Each folder is named after a **data structure** or **algorithmic topic** and con
 
 ---
 
+# Two Adds (20 mins)
 
-1. Two Adds (20 mins)
-Problem:
+### Problem:
+
 Write a function that adds from two invocations.
-Example:
 
-js
-Copy
-Edit
+#### Example:
+
+```js
 twoAdds(3)(4); // This should return 7
+```
+
 Additional Problem 1:
 Write a function that allows you to multiply from two invocations instead of adding.
 Example:
@@ -33,6 +35,7 @@ js
 Copy
 Edit
 twoMults(3)(4); // This should return 12
+
 Additional Problem 2:
 Write a function that subtracts from two invocations.
 Example:
@@ -44,9 +47,9 @@ twoSubtracts(10)(4); // This should return 6
 Topic Covered: Closures, Function Composition.
 
 2. Clonator (30 mins)
-Problem:
-Write a function that creates a deep copy of the input it receives.
-Example:
+   Problem:
+   Write a function that creates a deep copy of the input it receives.
+   Example:
 
 js
 Copy
@@ -78,9 +81,9 @@ console.log(clonedArr[0].name); // 'John'
 Topic Covered: Deep vs Shallow Copy, Object Manipulation.
 
 3. Highest Word Count (45 mins)
-Problem:
-Write a function that returns the most frequent word in a string. If multiple words have the same highest frequency, return all of them in an array.
-Example:
+   Problem:
+   Write a function that returns the most frequent word in a string. If multiple words have the same highest frequency, return all of them in an array.
+   Example:
 
 js
 Copy
@@ -108,8 +111,8 @@ uniqueWords("The quick brown fox jumped over the lazy dog");
 Topic Covered: String Manipulation, Word Counting, Regular Expressions.
 
 4. Evented Thing (30 mins)
-Problem:
-Create a class EventedThing that can handle events. The class should have:
+   Problem:
+   Create a class EventedThing that can handle events. The class should have:
 
 A method on(event, callback) to listen for events.
 
@@ -145,15 +148,15 @@ eventedThing.trigger('greet', 'Jane'); // Output: "Hello, Jane"
 Topic Covered: Object-Oriented Programming, Event Handling.
 
 5. Fix This ASAP (30 mins)
-Problem:
-You have an issue in a tax calculation where the tax shows a floating-point imprecision (e.g., 0.020000000000000004 instead of 0.02).
-Fix the issue by ensuring the tax value is calculated correctly.
+   Problem:
+   You have an issue in a tax calculation where the tax shows a floating-point imprecision (e.g., 0.020000000000000004 instead of 0.02).
+   Fix the issue by ensuring the tax value is calculated correctly.
 
 Topic Covered: Floating Point Precision, Number Handling.
 
 6. Yarra (30 mins)
-Problem:
-Write a function yarra() that reverses an array in-place without using the native reverse() method.
+   Problem:
+   Write a function yarra() that reverses an array in-place without using the native reverse() method.
 
 Example:
 
@@ -170,7 +173,7 @@ Example:
 js
 Copy
 Edit
-rotateArray([1, 2, 3, 4], 2);  // This should return [3, 4, 1, 2]
+rotateArray([1, 2, 3, 4], 2); // This should return [3, 4, 1, 2]
 Additional Problem 2:
 Write a function that checks if an array is a palindrome (the same forwards and backwards).
 Example:
@@ -178,13 +181,13 @@ Example:
 js
 Copy
 Edit
-isPalindrome([1, 2, 3, 2, 1]);  // This should return true
+isPalindrome([1, 2, 3, 2, 1]); // This should return true
 Topic Covered: Array Manipulation, In-Place Operations.
 
 7. Methodize (20 mins)
-Problem:
-Write a function that converts a binary function (a function that takes two arguments) into a method that can be called on a number.
-For example, converting an addition function into a method on the Number prototype.
+   Problem:
+   Write a function that converts a binary function (a function that takes two arguments) into a method that can be called on a number.
+   For example, converting an addition function into a method on the Number prototype.
 
 Example:
 
@@ -217,8 +220,8 @@ Number.prototype.divide = methodize(divide);
 Topic Covered: Prototypes, Higher-Order Functions.
 
 8. Circular List (30 mins)
-Problem:
-Write a function that determines if a linked list is circular. A list is circular if the next pointer of its last node points to a previous node, instead of being null or undefined.
+   Problem:
+   Write a function that determines if a linked list is circular. A list is circular if the next pointer of its last node points to a previous node, instead of being null or undefined.
 
 Example:
 
@@ -226,7 +229,7 @@ js
 Copy
 Edit
 const head = { value: 1, next: { value: 2, next: { value: 3, next: head } } };
-isCircular(head);  // This should return true because the list is circular.
+isCircular(head); // This should return true because the list is circular.
 Additional Problem 1:
 Write a function that checks if a linked list is palindromic (it reads the same forwards and backwards).
 Example:
@@ -234,7 +237,7 @@ Example:
 js
 Copy
 Edit
-isPalindrome(head);  // This should return true for a list like 1 -> 2 -> 1.
+isPalindrome(head); // This should return true for a list like 1 -> 2 -> 1.
 Additional Problem 2:
 Write a function that detects a cycle in a linked list using the Floyd's Tortoise and Hare algorithm.
 Example:
@@ -242,12 +245,12 @@ Example:
 js
 Copy
 Edit
-hasCycle(head);  // This should return true for a cyclic linked list.
+hasCycle(head); // This should return true for a cyclic linked list.
 Topic Covered: Linked Lists, Cycle Detection.
 
 9. Spiral Traversal (45 mins)
-Problem:
-Write a function that spirally traverses a matrix (a grid of numbers) and returns a comma-separated string of the values.
+   Problem:
+   Write a function that spirally traverses a matrix (a grid of numbers) and returns a comma-separated string of the values.
 
 Example:
 
@@ -265,7 +268,7 @@ Example:
 js
 Copy
 Edit
-spiralSum(string);  // This should return the sum of all values in the spiral order.
+spiralSum(string); // This should return the sum of all values in the spiral order.
 Additional Problem 2:
 Write a function that traverses the matrix in a zigzag pattern (alternating left-to-right and right-to-left rows).
 Example:
@@ -273,12 +276,12 @@ Example:
 js
 Copy
 Edit
-zigzagTraversal(string);  // This should return '1,2,3,6,5,4,7,8,9'.
+zigzagTraversal(string); // This should return '1,2,3,6,5,4,7,8,9'.
 Topic Covered: Matrix Traversal, Algorithms.
 
 10. Diagonal Difference (45 mins)
-Problem:
-Write a function that calculates the difference between the sums of the diagonals in a square matrix. The matrix is given as a string, and the function should return the absolute difference between the sums of the diagonals.
+    Problem:
+    Write a function that calculates the difference between the sums of the diagonals in a square matrix. The matrix is given as a string, and the function should return the absolute difference between the sums of the diagonals.
 
 Example:
 
@@ -296,7 +299,7 @@ Example:
 js
 Copy
 Edit
-diagonalSum(matrix);  // This should return the sum of both diagonals.
+diagonalSum(matrix); // This should return the sum of both diagonals.
 Additional Problem 2:
 Write a function that checks whether the two diagonals in a matrix have the same sum.
 Example:
@@ -304,13 +307,13 @@ Example:
 js
 Copy
 Edit
-hasEqualDiagonals(matrix);  // This should return true if the diagonals have the same sum.
+hasEqualDiagonals(matrix); // This should return true if the diagonals have the same sum.
 Topic Covered: Matrix Operations, Arithmetic Operations.
 
 11. Prime Tester (45 mins)
-Problem:
-Write a function that checks whether a given number is prime.
-Example:
+    Problem:
+    Write a function that checks whether a given number is prime.
+    Example:
 
 js
 Copy
@@ -323,7 +326,7 @@ Example:
 js
 Copy
 Edit
-getPrimes(10);  // This should return [2, 3, 5, 7]
+getPrimes(10); // This should return [2, 3, 5, 7]
 Additional Problem 2:
 Write a function that checks if a number is semi-prime (a product of two primes).
 Example:
@@ -331,13 +334,13 @@ Example:
 js
 Copy
 Edit
-isSemiPrime(6);  // This should return true because 6 is a product of primes 2 and 3.
+isSemiPrime(6); // This should return true because 6 is a product of primes 2 and 3.
 Topic Covered: Prime Numbers, Number Theory.
 
 12. Give Me Time (45 mins)
-Problem:
-Write a function that converts a timestamp (number) into a human-friendly time interval.
-For example, it should return "now", "1 min ago", or "5 days ago", depending on how much time has passed since the timestamp.
+    Problem:
+    Write a function that converts a timestamp (number) into a human-friendly time interval.
+    For example, it should return "now", "1 min ago", or "5 days ago", depending on how much time has passed since the timestamp.
 
 Example:
 
@@ -352,7 +355,7 @@ Example:
 js
 Copy
 Edit
-formatTimestamp(Date.now());  // This should return the current date in MM-DD-YYYY format.
+formatTimestamp(Date.now()); // This should return the current date in MM-DD-YYYY format.
 Additional Problem 2:
 Write a function that returns how much time has passed between two given timestamps in a user-friendly way (e.g., "5 hours ago").
 Example:
@@ -360,19 +363,19 @@ Example:
 js
 Copy
 Edit
-timePassed(new Date(Date.now() - 2 * 3600e3).getTime());  // This should return '2 hours ago'
+timePassed(new Date(Date.now() - 2 \* 3600e3).getTime()); // This should return '2 hours ago'
 Topic Covered: Date & Time Handling, Formatting.
 
 13. Many Invocations (20 mins)
-Problem:
-Write a function that sums values over many invocations, until an empty invocation is seen, at which point it returns the sum. If the first invocation is empty, return undefined.
+    Problem:
+    Write a function that sums values over many invocations, until an empty invocation is seen, at which point it returns the sum. If the first invocation is empty, return undefined.
 
 Example:
 
 js
 Copy
 Edit
-addMany(3)(4)(1)(7)();  // This should return 15
+addMany(3)(4)(1)(7)(); // This should return 15
 Additional Problem 1:
 Write a function that counts the number of invocations before an empty invocation is seen.
 Example:
@@ -380,7 +383,7 @@ Example:
 js
 Copy
 Edit
-countInvocations(3)(4)(1)(7)();  // This should return 4
+countInvocations(3)(4)(1)(7)(); // This should return 4
 Additional Problem 2:
 Write a function that tracks the maximum value across many invocations until the empty invocation is seen.
 Example:
@@ -388,12 +391,12 @@ Example:
 js
 Copy
 Edit
-maxValue(3)(4)(7)(1)();  // This should return 7
+maxValue(3)(4)(7)(1)(); // This should return 7
 Topic Covered: Closures, Function Composition.
 
 14. Common Ancestor (60 mins)
-Problem:
-Write a function that takes two nodes in a tree and returns the closest common ancestor of those nodes.
+    Problem:
+    Write a function that takes two nodes in a tree and returns the closest common ancestor of those nodes.
 
 Example:
 
@@ -405,7 +408,7 @@ const mom = new Tree('mom');
 const ant = new Tree('ant');
 grandma.addChild(mom);
 grandma.addChild(ant);
-grandma.commonAncestor(mom, ant);  // This should return grandma
+grandma.commonAncestor(mom, ant); // This should return grandma
 Additional Problem 1:
 Write a function that finds the deepest node in a binary tree.
 Example:
@@ -413,7 +416,7 @@ Example:
 js
 Copy
 Edit
-findDeepestNode(grandma);  // This should return the deepest node.
+findDeepestNode(grandma); // This should return the deepest node.
 Additional Problem 2:
 Write a function that checks whether a given node is a leaf node (i.e., it has no children).
 Example:
@@ -421,7 +424,7 @@ Example:
 js
 Copy
 Edit
-isLeaf(ant);  // This should return true because 'ant' has no children.
+isLeaf(ant); // This should return true because 'ant' has no children.
 Topic Covered: Tree Traversal, Binary Trees.
 
 ## 🔹 Data Structures
