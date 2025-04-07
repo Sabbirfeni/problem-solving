@@ -19,8 +19,8 @@ Each folder is named after a **data structure** or **algorithmic topic** and con
 
 ### Prerequisites
 
-- Node.js (vXX or higher)
-- npm (vXX or higher)
+- Node.js
+- npm
 
 ### Installation
 
